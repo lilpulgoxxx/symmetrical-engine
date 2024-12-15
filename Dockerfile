@@ -83,7 +83,7 @@ RUN pip install --upgrade pip && \
     pip install --no-cache-dir --pre torch==2.6.0.dev20241122 --index-url https://download.pytorch.org/whl/nightly/rocm6.2
 
 # Install vllm and huggingface-hub
-RUN pip install vllm && \
+RUN pip install vllm==0.6.2 && \
     pip install huggingface-hub[cli]
 
 # Expose port for the model server
